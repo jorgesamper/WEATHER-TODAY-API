@@ -6,17 +6,12 @@ import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div></div>
-      <h1>WEATHER</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+    
+      <h1>WEATHER TODAY</h1>
+      
 
       <footer className="bg-body-light text-white">
         <div className="container pt-5 pb-2">
