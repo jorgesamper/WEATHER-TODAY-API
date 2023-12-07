@@ -3,6 +3,9 @@ const API_WEATHER = `https://api.weatherapi.com/v1/current.json?key=${
 }&q=`;
 
 const fetchWeatherData = async (city) => {
+
+  console.log(import.meta.env.VITE_API_KEY); //comprobación
+
   const response = await fetch(`${API_WEATHER}${city}`);
   const data = await response.json();
   if (data.error) {
